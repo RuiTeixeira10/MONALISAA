@@ -43,13 +43,12 @@ Cátia, eu amo-te.
     `,
 
     distantemente: `
-Amo te mesmo muito meu amor e já que agora estás no apartamento já te posso dizer sem te incomodar.
 Amor eu não quero que penses demais , eu sei o quão mau isso é.
-Esta primeira semana de namoro é mesmo para provar que isto é para levar para a frente , primeira vez tanto tempo separados e logo na primeira semana de namoro , não é para qualquer um.
-E nós não somos qualquer um, quando não consegues responder eu não levo a mal , nem fico triste , fico feliz por saber que estás a passar um bom tempo , apenas fico com saudades , nada mais.
-No tempo dos meus avós, também não havia , "será que está online", "será que demora a responder" e eu acho que é por isso que essas relações duram , porque tinha que haver confiança, não havia esse tipo de problemas.
+Esta primeira semana de namoro é mesmo para provar que isto é para levar para a frente , vai ser a primeira vez que ficamos muito tempo separados e logo na primeira semana de namoro , isto não é para qualquer um.
+E nós não somos 'qualquer um'. Nas situações em que não consegues responder, eu não levo a mal e nem fico triste , aliás fico feliz por saber que estás a passar um bom tempo. O único sentimento que prevalece são as saudades.
+No tempo dos meus avós, também não havia: "será que está online" ou "será que demora a responder?" e é por isso que essas relações duram , porque tinha que haver confiança.
 E eu confio em ti , confio em que te estejas a divertir e aproveitar tempo com a tua família.
-Só quero que saibas que o que sinto é apenas saudade, nada mais e eu tenho a certeza que esse sentimento irá gerar momentos muito bonitos no futuro.
+Tudo isto só porque quero que saibas que o que sinto é apenas saudade, nada mais e eu tenho a certeza que esse sentimento irá gerar momentos muito bonitos no futuro.
 Já estou mesmo a ver que os meus fins de dia são para assistir os teus stories maravilhosos feitos pela minha blogueira favorita.
 Eu nunca vou me cansar de escrever este tipo de mensagens para ti my love.
 Amo-te muitoooooo ❤️

@@ -23,9 +23,23 @@ body {
 }
 
 h1 {
-    font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: normal;
     color: #e63950;
+    text-shadow: 0 2px 6px rgba(230, 57, 80, 0.2);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+/* ornamento decorativo por baixo do título */
+h1::after {
+    content: "❧";
+    display: block;
+    font-size: 20px;
+    color: #ffb3bd;
+    margin: 6px 0 25px;
+    letter-spacing: 8px;
 }
 
 /* BOTÕES LADO A LADO */
@@ -40,20 +54,30 @@ h1 {
 /* Ambos os botões iguais */
 .buttons button {
     width: 180px;
-    padding: 12px 18px;
+    padding: 13px 18px;
     border-radius: 999px;
     border: none;
-    background: #ff6b81;
+    background: linear-gradient(135deg, #ff8a9a, #ff6b81);
     color: white;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
+    box-shadow:
+        0 6px 16px rgba(230, 57, 80, 0.3),
+        inset 0 1px 1px rgba(255,255,255,0.3);
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .buttons button:hover {
-    background: #ff4b63;
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #ff97a6, #ff4b63);
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 22px rgba(230, 57, 80, 0.4),
+        inset 0 1px 1px rgba(255,255,255,0.3);
+}
+
+.buttons button:active {
+    transform: translateY(-1px) scale(0.97);
 }
 
 #btnFoge.foge {

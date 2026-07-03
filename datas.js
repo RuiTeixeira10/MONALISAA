@@ -9,10 +9,10 @@ const diasEspeciais = {
     "2026-06-06": "Primeira vêz em Paiva",
     "2026-06-10": "Primeiro Sushi",
     "2026-06-12": "Amo-te",
-    "2026-06-13": "As melhores 8 horas",
+    "2026-06-13": "Melhores 8 horas",
     "2026-06-17": "Primeiro jogo juntos",
-    "2026-06-21": "Primeiro convite dela",
-    "2026-06-23": "Sao Joao",
+    "2026-06-21": "Primeira vez a ser convidado",
+    "2026-06-23": "São João",
     "2026-06-27": "O nosso dia ❤️",
     "2026-06-29": "Primeira vez com o Salvador"
 };
@@ -20,17 +20,17 @@ const descricoesEspeciais = {
     "2026-05-24": "Fui á procura de um artista falso e encontrei um amor verdadeiro.",
     "2026-05-27": "Perdido nas nossas conversas , encontrei o que sempre procurei.",
     "2026-05-31": "A fome de te ter era tanta que jantei duas vezes ahahah",
-    "2026-06-01": "Uma sensação inexplicavel, nunca me tinha perdido nos olhos de alguém como me perdi nos teus, quando te beijei descobri o paraíso é verdadeiro.",
+    "2026-06-01": "Uma sensação inexplicavel, nunca me tinha perdido nos olhos de alguém como me perdi nos teus, quando te beijei descobri que o paraíso é real.",
     "2026-06-03": "Tinha a certeza de que algo estaria a florescer.",
     "2026-06-06": "Confiaste em mim e visitas te a minha terra , essa mesma vila que nunca esteve tão bela como nesse dia. ",
-    "2026-06-10": "Senti-me encantado , estava perfeita , maravilhosa , gostosa , já o sushi até estava bom.",
-    "2026-06-12": "A minha felicidade a ir embora é algo que só gravado conseguiria transmitir, absurdamente apaixondao, a mulher da minha vida a dizer-me 'amo-te' , uau.",
-    "2026-06-13": "Como amei passar 8 horas a ver-te , a sorrir , confusa , admirada, pensativa, cansada, trabalhadora, exemplar, de qualquer forma amei te ver e passaria muitas mais.",
+    "2026-06-10": "Senti-me encantado , estava perfeita , maravilhosa e gostosa , já o sushi até estava bom.",
+    "2026-06-12": "A minha felicidade a ir embora é algo que só conseguiria transmitir através de uma gravação, absurdamente apaixonado, a mulher da minha vida a dizer-me 'amo-te' , uau.",
+    "2026-06-13": "Como amei passar 8 horas a ver-te sorrir , confusa , admirada, pensativa, cansada, trabalhadora, exemplar, de qualquer forma amei te ver e passaria muitas mais horas.",
     "2026-06-17": " 'Comeeeeeeeça o mundial , Portugal toca na bola pela primeira vez neste campeonato do mundo de 2026' , mal sabem eles que antes de começar já me sentia vencedor.",
-    "2026-06-21": "Quando me convidaste pela primeira vez e não consegui esconder o sorriso para a minha familia toda.",
+    "2026-06-21": "Quando me convidaste pela primeira vez, não consegui esconder o sorriso para a minha família toda.",
     "2026-06-23": "Ver o fogo de artifício contigo foi das melhores sensações, estar agarrado a ti enquanto o mundo festejava o primeiro mês desde o Tahi , foi mágico.",
-    "2026-06-27": "Antes deste dia ja tinha certezas de tudo, já só ansiava que chegasse , dizer que sou teu namorado é um privilégio , amo te imenso namorada.",
-    "2026-06-29": "Primeira vez com um dos amores do meu amor , senti-me casa , o desafio de o tentar fazer rir acabou por se tornar uma alegria para mim, amei estar com ele e com o amor da minha vida ao lado , foi um momento que nunca esquecerei."
+    "2026-06-27": "Já tinha certezas de tudo, ansiava por uma data , um orgulho que não cabe no peito de poder dizer que sou teu namorado , amo-te imenso namorada.",
+    "2026-06-29": "Primeira vez com um dos amores do meu amor , senti-me casa , o desafio de o tentar fazer rir acabou por se tornar uma alegria para mim, amei estar com ele e com o amor da minha vida ao lado , foi um momento único."
 };
 
 
