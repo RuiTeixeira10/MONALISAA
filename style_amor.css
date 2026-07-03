@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    max-width: 420px;
+    text-align: center;
+    position: relative; /* necessário para posicionamento interno */
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #e63950;
+}
+
+/* BOTÕES LADO A LADO */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Ambos os botões iguais */
+.buttons button {
+    width: 180px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #ff6b81;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.buttons button:hover {
+    background: #ff4b63;
+    transform: translateY(-2px);
+}
+
+#btnFoge.foge {
+    position: fixed;
+    z-index: 999;
+}
+
+.popup-topo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff6b81;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 9999;
+}
+.popup-topo.show {
+    opacity: 1;
+}
