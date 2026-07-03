@@ -2,13 +2,9 @@ const popup = document.getElementById("popupCarta");
 const tituloCarta = document.getElementById("tituloCarta");
 const textoCarta = document.getElementById("textoCarta");
 
-function abrirCarta(id) {
-
-    if (id === "pedido") {
-        tituloCarta.textContent = "O pedido do para sempre";
-
-        textoCarta.textContent = `
-__.Catia..Santos.__ , nunca fiquei tão feliz por encontrar uma conta no instagram.
+const textos = {
+    pedido: `
+Nunca fiquei tão feliz por encontrar uma conta no instagram , e ela tem nome: __.Catia._.Santos.__ .
 Ainda me lembro da sensação de te ter visto no Tahi , foi única. Lembro de como tudo ficou desfocado a volta , lembro de dizer ao meu amigo que tinha visto uma rapariga lindíssima,  lembro me também de não conseguir parar de olhar para ti, mesmo quando os nossos olhos se cruzavam eu continuava.
 Eu sabia que depois dessa festa eu tinha que fazer de tudo para te encontrar , por fim passado dois dias lá te consegui mandar mensagem. Isto eu nunca te disse , mas no início cheguei até a ficar horas a pensar no que te responder , então quando foi a primeira mensagem , pensei durante o dia todo, porque sabia que não estava a falar com uma qualquer , mas sim com uma mulher. 
 Não podia pedir melhor primeiro date , foi uma conexão absurda , quem é que falaria do que nós falamos e depois ficaria a a ouvir a minha playlist? Tudo isto de uma forma leve , sem pensar muito antes de falar, quando duas almas que se completam encontram-se não há dificuldade em se juntarem.
@@ -16,7 +12,7 @@ E foi mesmo isso que aconteceu , eu sabia que eras tu mesmo antes de te beijar ,
 
 A partir daí foi só alegrias , no parque da cidade em Penafiel , confesso que é um dos meus momentos preferidos quando fomos jogar as caçadinhas , porque fizeste me voltar a ser aquele menino ingénuo e feliz , uma autêntica criança,  essa mesma criança que sempre sonhou com o que estou a viver agora. E mesmo que não fosse só alegrias , eu estaria lá contigo , porque eu quero estar presente, seja onde for e a razão que for, porque tu fizeste em menos de um mês o que nunca ninguem fez.
 
-Todas as tuas inseguranças são desafios para mim , quero fazer te ver como eu te vejo , uma menina mulher , uma princesa , uma raínha , uma pessoa esforçada,  dedicada e que sabe o que quer e dá sempre um jeito para isso. Todas as imperfeções que tu te colocas a ti mesma , eu consigo amar cada uma , eu amo todas as tuas perfeitas imperfeições e um dia acabarás por concordar comigo. O texto que me mandaste naquela noite foi um grande passo para mim , senti-o e vivi-o como se fosse eu na tua situação. Por isso mesmo um dos meus objetivos de vida é ajuda lo a superar porque não gosto de ver ninguém da minha família com pensamentos negativos principalmente sobre algo que já passou. Tu também ja me ajudaste tanto que eu acho que não tens noção. És tu que me acalmas , és tu que me motivas , és tu e serás sempre tu , porque tu fazes o que nunca ninguem fez.
+Todas as tuas inseguranças são desafios para mim , quero fazer te ver como eu te vejo , uma menina mulher , uma princesa , uma raínha , uma pessoa esforçada,  dedicada e que sabe o que quer e dá sempre um jeito para isso. Todas as imperfeições que tu te colocas a ti mesma , eu consigo amar cada uma , eu amo todas as tuas perfeitas imperfeições e um dia acabarás por concordar comigo. O texto que me mandaste naquela noite foi um grande passo para mim , senti-o e vivi-o como se fosse eu na tua situação. Por isso mesmo um dos meus objetivos de vida é ajuda lo a superar porque não gosto de ver ninguém da minha família com pensamentos negativos principalmente sobre algo que já passou. Tu também ja me ajudaste tanto que eu acho que não tens noção. És tu que me acalmas , és tu que me motivas , és tu e serás sempre tu , porque tu fazes o que nunca ninguem fez.
 
 Uma vez um certo poeta chamado Fyodor Dostoevkij disse: "Há algum tempo atrás nós nem nos conheciamos, eramos apenas duas almas a caminhar , invisíveis uma a outra.
 Em um dia, sem avisos , encontramo-nos no mesmo caminho e eles dizem que certos encontros mudam vidas , este foi um deles.
@@ -44,27 +40,113 @@ Para isso passávamos logo para casamento.
 Eu quero conhecer te cada vez mais todos os dias , amar te.
 Tudo faz me lembrar de ti.
 Cátia, eu amo-te.
-        `;
-    }
+    `,
 
+    distantemente: `
+Amo te mesmo muito meu amor e já que agora estás no apartamento já te posso dizer sem te incomodar.
+Amor eu não quero que penses demais , eu sei o quão mau isso é.
+Esta primeira semana de namoro é mesmo para provar que isto é para levar para a frente , primeira vez tanto tempo separados e logo na primeira semana de namoro , não é para qualquer um.
+E nós não somos qualquer um, quando não consegues responder eu não levo a mal , nem fico triste , fico feliz por saber que estás a passar um bom tempo , apenas fico com saudades , nada mais.
+No tempo dos meus avós, também não havia , "será que está online", "será que demora a responder" e eu acho que é por isso que essas relações duram , porque tinha que haver confiança, não havia esse tipo de problemas.
+E eu confio em ti , confio em que te estejas a divertir e aproveitar tempo com a tua família.
+Só quero que saibas que o que sinto é apenas saudade, nada mais e eu tenho a certeza que esse sentimento irá gerar momentos muito bonitos no futuro.
+Já estou mesmo a ver que os meus fins de dia são para assistir os teus stories maravilhosos feitos pela minha blogueira favorita.
+Eu nunca vou me cansar de escrever este tipo de mensagens para ti my love.
+Amo-te muitoooooo ❤️
+    `
+};
+
+
+/* ============================
+   ABRIR CARTA
+============================ */
+function abrirCarta(id) {
+    if (!textos[id]) return;
+
+    // título da carta
+    tituloCarta.textContent =
+        id === "pedido" ? "O pedido do para sempre" :
+        id === "distantemente" ? "Distantemente perto" :
+        "";
+
+    // mostrar popup
     popup.style.display = "flex";
+
+    requestAnimationFrame(() => {
+        popup.classList.add("visivel");
+    });
+
+    digitarTexto(textoCarta, textos[id].trim());
 }
 
-// fechar ao clicar fora
-popup.addEventListener("click", (e) => {
-    if (e.target === popup) {
+/* ============================
+   FECHAR CARTA
+============================ */
+function fecharCarta() {
+    popup.classList.remove("visivel");
+
+    setTimeout(() => {
         popup.style.display = "none";
-    }
+        clearInterval(textoCarta._intervaloDigitacao);
+    }, 350);
+}
+
+// fechar ao clicar fora do papel
+popup.addEventListener("click", (e) => {
+    if (e.target === popup) fecharCarta();
 });
 
+/* ============================
+   ANIMAÇÃO DO ENVELOPE
+============================ */
 function abrirCartaAnimada(elemento, id) {
-    // evita clicar duas vezes durante a animação
     if (elemento.classList.contains("aberta")) return;
 
     elemento.classList.add("aberta");
 
     setTimeout(() => {
-        abrirCarta(id); // a tua função já existente que mostra o .popup-carta
-        elemento.classList.remove("aberta"); // reset para a próxima vez
-    }, 550); // tempo para a "carta" já ter saído visualmente
+        abrirCarta(id);
+        elemento.classList.remove("aberta");
+    }, 450);
+}
+
+/* ============================
+   EFEITO DE DIGITAÇÃO
+============================ */
+function digitarTexto(elemento, textoCompleto) {
+    elemento.textContent = "";
+
+    const cursor = document.createElement("span");
+    cursor.className = "cursor";
+    cursor.textContent = "|";
+
+    let i = 0;
+    const velocidade = 15;
+    const caracteresPorTick = 6;
+    const container = elemento.parentElement;
+
+    clearInterval(elemento._intervaloDigitacao);
+
+    elemento._intervaloDigitacao = setInterval(() => {
+        i += caracteresPorTick;
+
+        const estavaPertoDoFundo =
+            container.scrollHeight - container.scrollTop - container.clientHeight < 80;
+
+        elemento.textContent = textoCompleto.slice(0, i);
+        elemento.appendChild(cursor);
+
+        if (estavaPertoDoFundo) {
+            container.scrollTop = container.scrollHeight;
+        }
+
+        if (i >= textoCompleto.length) {
+            elemento.textContent = textoCompleto;
+            clearInterval(elemento._intervaloDigitacao);
+        }
+    }, velocidade);
+}
+
+function voltarPagina() {
+    window.location.href = "principal.html"; 
 }

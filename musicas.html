@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Músicas</title>
+    <link rel="stylesheet" href="musicas.css">
+</head>
+<body>
+
+<div class="musicas-container">
+
+    <h1 class="titulo-musicas">Músicas</h1>
+
+    <div class="musica-item" onclick="abrirMusica('missThing')">
+        I Don’t Want to Miss a Thing — Aerosmith
+    </div>
+    <button class="btn-voltar" onclick="voltarPagina()">Voltar</button>
+</div>
+
+<!-- POPUP -->
+<div id="popupMusica" class="popup-musica">
+    <div class="popup-card-musica">
+
+        <h2 id="tituloMusica"></h2>
+
+        <div class="musica-conteudo">
+
+            <!-- LETRA + TRADUÇÃO FICAM TODAS AQUI -->
+            <div class="letra" id="letraMusica"></div>
+
+            <div class="info-musica">
+                <img id="capaMusica" class="capa-musica">
+                <p id="autorMusica" class="autor-musica"></p>
+
+                <button class="btn-traducao" onclick="mostrarTraducao()">Tradução</button>
+            </div>
+        </div>
+
+        <button class="btn-fechar" onclick="fecharPopupMusica()">Fechar</button>
+    </div>
+</div>
+
+
+
+<script src="musicas.js"></script>
+</body>
+</html>
+

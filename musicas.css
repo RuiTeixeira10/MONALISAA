@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+
+
+.musicas-container {
+    background: rgba(255,255,255,0.9);
+    width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.titulo-musicas {
+    font-family: "Great Vibes", cursive;
+    font-size: 48px;
+    text-align: center;
+    color: #e63950;
+    margin-bottom: 30px;
+}
+
+.musica-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.musica-item:hover {
+    background: #ffe3e8;
+    transform: translateY(-4px);
+}
+
+/* POPUP */
+.popup-musica {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.popup-card-musica {
+    background: #fffdf8;
+    width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.popup-card-musica h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 42px;
+    text-align: center;
+    color: #7a5a3a;
+}
+
+.musica-conteudo {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.letra {
+    width: 55%;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.info-musica {
+    width: 45%;
+    text-align: center;
+}
+
+.capa-musica {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.autor-musica {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.btn-traducao {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e63950;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.25s ease;
+}
+
+.btn-traducao:hover {
+    background: #c72f45;
+}
+
+.traducao-musica {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #7a5a3a;
+}
+
+.btn-fechar {
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: #e63950;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.letra p {
+    margin: 4px 0;
+    font-size: 22px;
+}
+
+.linha-traduzida {
+    margin-top: 8px;
+}
+
+.linha-trad {
+    color: #7a5a3a;
+    font-style: italic;
+}
+
+.linha-bloco {
+    margin-bottom: 12px;
+}
+
+.linha-original {
+    font-size: 22px;
+}
+
+.linha-trad {
+    font-size: 20px;
+    color: #7a5a3a;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.btn-voltar {
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: #e63950;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: 0.25s ease;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.btn-voltar:hover {
+    background: #c72f45;
+    transform: translateY(-3px);
+}
